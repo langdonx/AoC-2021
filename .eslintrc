@@ -1,0 +1,71 @@
+{
+	"extends": "airbnb",
+	"rules": {
+		"arrow-body-style": [0, "as-needed"],
+		"brace-style": [
+			"error",
+			"stroustrup",
+			{
+				"allowSingleLine": true
+			}
+		],
+		"class-methods-use-this": "off",
+		"default-case": "off",
+		"indent": [
+			"error",
+			4,
+			{
+				"SwitchCase": 1
+			}
+		],
+		"max-len": [
+			"error",
+			200,
+			{
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true
+			}
+		],
+		"newline-per-chained-call": "off",
+		"no-console": "off",
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxEOF": 1
+			}
+		],
+		"no-param-reassign": [
+			2,
+			{
+				"props": false
+			}
+		],
+		"no-prototype-builtins": "off",
+		"no-restricted-syntax": [
+			"error",
+			{
+				"selector": "AssignmentExpression > ConditionalExpression > AssignmentExpression",
+				"message": "Do not use an assignment inside of a ternary expression that is already being used as an assignment"
+			}
+		],
+		"no-underscore-dangle": [
+			"error",
+			{
+				"allow": [
+					"_billingCodeOverride",
+					"_cachedPhase",
+					"_request"
+				]
+			}
+		],
+		"object-curly-newline": "off",
+		"prefer-destructuring": "off"
+	},
+	"globals": {
+		"angular": true,
+		"document": true,
+		"moment": true,
+		"navigator": true
+	}
+}
