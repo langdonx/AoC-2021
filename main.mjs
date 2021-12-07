@@ -10,7 +10,7 @@ const days = fs
         const parts = fs
             .readdirSync(`./${day}`)
             .map((file) => {
-                const matches = file.match(/part([\d-]+7)\.mjs$/);
+                const matches = file.match(/part([\d-]+)\.mjs$/);
                 return matches ? matches[1] : null;
             })
             .filter(part => part)
