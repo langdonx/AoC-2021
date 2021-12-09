@@ -53,5 +53,5 @@ else {
     boardWithBingo.displayBoard();
     const score = boardWithBingo.calculateScore(winningNumber);
 
-    console.log(`The winning score is ${score}.`)
+    console.log(`The winning score is ${score}.`);
 }

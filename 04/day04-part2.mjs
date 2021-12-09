@@ -23,7 +23,6 @@ const boards = boardInput
         return new Board(squares, 5);
     });
 
-let boardsWithBingo = 0;
 let finalWinningNumber = 0;
 let losingBoard = null;
 
@@ -36,8 +35,6 @@ for (const n of numbers) {
 
             // if the board has bingo, keep track of it
             if (board.hasBingo === true) {
-                boardsWithBingo += 1;
-
                 // if this is the final board to achieve bingo, take note and stop looping
                 const numberOfWinningBoards = boards.filter(b => b.hasBingo === true).length;
                 if (numberOfWinningBoards === boards.length) {
