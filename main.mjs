@@ -19,7 +19,7 @@ const days = fs
         return { day: parseInt(day, 10), parts };
     });
 
-const maxDay = days.reduce((p, d) => (d.day > p ? d.day : p), 0)
+const maxDay = days.reduce((p, d) => (d.day > p ? d.day : p), 0);
 
 const rli = readline.createInterface({
     input: process.stdin,
@@ -35,7 +35,7 @@ rli.question(`Choose a Day (1-${maxDay}): `, (dayChoice) => {
         const cwd = `${path.resolve()}/${dayDir}`;
         const command = `node day${dayDir}-part${partChoice}.mjs`;
 
-        exec(command, { cwd }, (err, stdout, stderr) => {
+        exec(command, { cwd }, (err, stdout) => {
             if (err) {
                 console.error(err);
                 return;
