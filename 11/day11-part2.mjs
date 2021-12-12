@@ -61,7 +61,7 @@ const step = () => {
 };
 
 // eslint-disable-next-line prefer-template
-const syncRegExp = new RegExp('(.)\\1{' + (matrixHeight * matrixWidth) + '},}');
+const syncRegExp = new RegExp('(.)\\1{' + (matrixHeight * matrixWidth - 1) + '}');
 
 const areSynchronized = () => {
     return octopusEnergyLevels.flat().join('').match(syncRegExp) !== null;
