@@ -8,5 +8,8 @@
     "eslint-plugin-no-undef-class-this": "0.0.2",
     "eslint-plugin-react": "7.11.1"
   },
+  "scripts": {
+    "lint": "node node_modules/eslint/bin/eslint.js **/*.mjs"
+  },
   "type": "module"
 }
